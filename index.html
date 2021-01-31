@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function sayHello() {
+            alert("Hello From HTML")
+        }
+    </script>
+</head>
+
+<body>
+    <!-- <iframe name="W3-Org " src="http://www.w3.org"></iframe> -->
+    <form name="register">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>Username</label>
+            <input type="text" name="username">
+            <label>Password</label>
+            <input type="password" name="password">
+            <label>Email</label>
+            <input type="text" name="email">
+            <label>Gender</label>
+            <select name="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select><br><br>
+            <input type="button" name="Say Hello" value="Say Hello" onclick="sayHello()">
+        </fieldset>
+        <fieldset>
+            <legend>Your Favourites</legend>
+            <label>Your Fevourite Text Editor</label>
+            <input type="radio" name="editor">Komodo Edit <br>
+            <input type="radio" name="editor">Net Beans <br>
+            <input type="radio" name="editor">Sublime Text
+            <hr>
+            <label>Your Fevourite Browser</label>
+            <input type="radio" name="browser">Google Chrome <br>
+            <input type="radio" name="browser">Mozilla Firefox <br>
+            <input type="radio" name="browser">Opera
+            <hr>
+            <label>Your Fevourite Operating System</label>
+            <input type="checkbox">Mac OSX <br>
+            <input type="checkbox">Linux <br>
+            <input type="checkbox">Windows
+        </fieldset>
+        <fieldset>
+            <legend>Your Message</legend>
+            <textarea></textarea>
+            <input type="submit" value="Send Your Data">
+        </fieldset>
+    </form>
+</body>
+
+</html>
